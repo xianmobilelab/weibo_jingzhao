@@ -11,8 +11,13 @@
 		0DEC84F41D2E4A20003826A2 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DEC84F01D2E4A20003826A2 /* WeiboSDK.bundle */; };
 		0DEC85451D2E8F64003826A2 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEC84E21D2E49F9003826A2 /* Quick.framework */; };
 		0DEC85461D2E8F64003826A2 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEC84E01D2E49F6003826A2 /* Nimble.framework */; };
+		0DEC854E1D2E9776003826A2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEC854D1D2E9776003826A2 /* HomeViewController.swift */; };
+		0DEC85501D2E97E0003826A2 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEC854F1D2E97E0003826A2 /* AddViewController.swift */; };
+		0DEC85521D2E97E7003826A2 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEC85511D2E97E7003826A2 /* FindViewController.swift */; };
+		0DEC85541D2E97F3003826A2 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEC85531D2E97F3003826A2 /* MeViewController.swift */; };
+		0DEC85561D2E97FB003826A2 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEC85551D2E97FB003826A2 /* NewsViewController.swift */; };
 		0DF0C5331D2DFA4000C63F78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF0C5321D2DFA4000C63F78 /* AppDelegate.swift */; };
-		0DF0C5351D2DFA4000C63F78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF0C5341D2DFA4000C63F78 /* ViewController.swift */; };
+		0DF0C5351D2DFA4000C63F78 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF0C5341D2DFA4000C63F78 /* TabBarViewController.swift */; };
 		0DF0C5381D2DFA4000C63F78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DF0C5361D2DFA4000C63F78 /* Main.storyboard */; };
 		0DF0C53A1D2DFA4000C63F78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DF0C5391D2DFA4000C63F78 /* Assets.xcassets */; };
 		0DF0C53D1D2DFA4000C63F78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DF0C53B1D2DFA4000C63F78 /* LaunchScreen.storyboard */; };
@@ -53,9 +58,14 @@
 		0DEC84F01D2E4A20003826A2 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
 		0DEC84F11D2E4A20003826A2 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
 		0DEC84F21D2E4A20003826A2 /* WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboUser.h; sourceTree = "<group>"; };
+		0DEC854D1D2E9776003826A2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0DEC854F1D2E97E0003826A2 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		0DEC85511D2E97E7003826A2 /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
+		0DEC85531D2E97F3003826A2 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		0DEC85551D2E97FB003826A2 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		0DF0C52F1D2DFA4000C63F78 /* weibo_jingzhao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weibo_jingzhao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DF0C5321D2DFA4000C63F78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0DF0C5341D2DFA4000C63F78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0DF0C5341D2DFA4000C63F78 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		0DF0C5371D2DFA4000C63F78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0DF0C5391D2DFA4000C63F78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DF0C53C1D2DFA4000C63F78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -127,6 +137,46 @@
 			path = Carthage/Checkouts/weibo_ios_sdk/libWeiboSDK;
 			sourceTree = "<group>";
 		};
+		0DEC85481D2E9758003826A2 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				0DEC854F1D2E97E0003826A2 /* AddViewController.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		0DEC85491D2E9758003826A2 /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				0DEC85511D2E97E7003826A2 /* FindViewController.swift */,
+			);
+			path = Find;
+			sourceTree = "<group>";
+		};
+		0DEC854A1D2E9758003826A2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0DEC854D1D2E9776003826A2 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0DEC854B1D2E9758003826A2 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				0DEC85531D2E97F3003826A2 /* MeViewController.swift */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		0DEC854C1D2E9758003826A2 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				0DEC85551D2E97FB003826A2 /* NewsViewController.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
 		0DF0C5261D2DFA4000C63F78 = {
 			isa = PBXGroup;
 			children = (
@@ -151,8 +201,13 @@
 		0DF0C5311D2DFA4000C63F78 /* weibo_jingzhao */ = {
 			isa = PBXGroup;
 			children = (
+				0DEC85481D2E9758003826A2 /* Add */,
+				0DEC85491D2E9758003826A2 /* Find */,
+				0DEC854A1D2E9758003826A2 /* Home */,
+				0DEC854B1D2E9758003826A2 /* Me */,
+				0DEC854C1D2E9758003826A2 /* News */,
 				0DF0C5321D2DFA4000C63F78 /* AppDelegate.swift */,
-				0DF0C5341D2DFA4000C63F78 /* ViewController.swift */,
+				0DF0C5341D2DFA4000C63F78 /* TabBarViewController.swift */,
 				0DF0C5361D2DFA4000C63F78 /* Main.storyboard */,
 				0DF0C5391D2DFA4000C63F78 /* Assets.xcassets */,
 				0DF0C53B1D2DFA4000C63F78 /* LaunchScreen.storyboard */,
@@ -330,8 +385,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DF0C5351D2DFA4000C63F78 /* ViewController.swift in Sources */,
+				0DEC85541D2E97F3003826A2 /* MeViewController.swift in Sources */,
+				0DEC85521D2E97E7003826A2 /* FindViewController.swift in Sources */,
+				0DF0C5351D2DFA4000C63F78 /* TabBarViewController.swift in Sources */,
 				0DF0C5331D2DFA4000C63F78 /* AppDelegate.swift in Sources */,
+				0DEC85561D2E97FB003826A2 /* NewsViewController.swift in Sources */,
+				0DEC85501D2E97E0003826A2 /* AddViewController.swift in Sources */,
+				0DEC854E1D2E9776003826A2 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
