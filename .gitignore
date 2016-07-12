@@ -1,0 +1,4 @@
+Carthage/Build/*
+.DS_Store
+weibo_jingzhao.xcodeproj/project.xcworkspace/xcuserdata/*
+weibo_jingzhao.xcodeproj/xcuserdata/zhaojing.xcuserdatad/*
