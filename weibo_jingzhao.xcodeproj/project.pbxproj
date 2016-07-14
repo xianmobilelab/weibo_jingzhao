@@ -43,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D2A31651D37D25C0045EADF /* weibo_jingzhao-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "weibo_jingzhao-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		0DEC84E01D2E49F6003826A2 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		0DEC84E21D2E49F9003826A2 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		0DEC84E61D2E4A20003826A2 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
@@ -106,6 +107,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D2A315F1D37C53A0045EADF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		0D2A31601D37C57B0045EADF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0D2A31611D37C5900045EADF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0D2A31631D37C5F60045EADF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0D2A31651D37D25C0045EADF /* weibo_jingzhao-Bridging-Header.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		0DEC84E41D2E49FF003826A2 /* lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +186,9 @@
 		0DEC854A1D2E9758003826A2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0D2A31611D37C5900045EADF /* View */,
+				0D2A31601D37C57B0045EADF /* Model */,
+				0D2A315F1D37C53A0045EADF /* ViewModel */,
 				0DEC854D1D2E9776003826A2 /* HomeViewController.swift */,
 			);
 			path = Home;
@@ -201,6 +234,7 @@
 		0DF0C5311D2DFA4000C63F78 /* weibo_jingzhao */ = {
 			isa = PBXGroup;
 			children = (
+				0D2A31631D37C5F60045EADF /* Common */,
 				0DEC85481D2E9758003826A2 /* Add */,
 				0DEC85491D2E9758003826A2 /* Find */,
 				0DEC854A1D2E9758003826A2 /* Home */,
@@ -535,6 +569,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -548,6 +583,8 @@
 				OSACOMPILE_EXECUTE_ONLY = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.none.weibo-jingzhao";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "weibo_jingzhao-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -555,6 +592,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -568,6 +606,7 @@
 				OSACOMPILE_EXECUTE_ONLY = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.none.weibo-jingzhao";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "weibo_jingzhao-Bridging-Header.h";
 			};
 			name = Release;
 		};
