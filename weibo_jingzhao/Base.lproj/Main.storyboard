@@ -115,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="-396" y="-246"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="waK-XW-5Vh">
             <objects>
-                <viewController id="wt5-9A-BeV" sceneMemberID="viewController">
+                <viewController id="wt5-9A-BeV" customClass="HomeViewController" customModule="weibo_jingzhao" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IOE-jP-iif"/>
                         <viewControllerLayoutGuide type="bottom" id="aPW-I8-H55"/>

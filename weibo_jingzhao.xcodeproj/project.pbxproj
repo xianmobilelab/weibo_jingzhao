@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D41058D1D3C9D4B005AD151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D41058C1D3C9D4B005AD151 /* Foundation.framework */; };
+		0D41058F1D3C9DF8005AD151 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D41058E1D3C9DF8005AD151 /* SystemConfiguration.framework */; };
+		0D4105911D3C9E38005AD151 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4105901D3C9E38005AD151 /* libsqlite3.tbd */; };
+		0D4105921D3C9E78005AD151 /* LogOnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2A31691D37D7400045EADF /* LogOnModel.swift */; };
+		0D4105941D3C9E9A005AD151 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4105931D3C9E9A005AD151 /* CoreTelephony.framework */; };
+		0D4105961D3CA02F005AD151 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4105951D3CA02F005AD151 /* MapKit.framework */; };
+		0D4105981D3CA037005AD151 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4105971D3CA037005AD151 /* ImageIO.framework */; };
+		0D41059A1D3CA06E005AD151 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4105991D3CA06E005AD151 /* libz.tbd */; };
+		0D71FE4D1D3CBAAA00F1BD68 /* LogOnViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71FE4C1D3CBAAA00F1BD68 /* LogOnViewModel.swift */; };
 		0DEC84F31D2E4A20003826A2 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEC84E61D2E4A20003826A2 /* libWeiboSDK.a */; };
 		0DEC84F41D2E4A20003826A2 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DEC84F01D2E4A20003826A2 /* WeiboSDK.bundle */; };
 		0DEC85451D2E8F64003826A2 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEC84E21D2E49F9003826A2 /* Quick.framework */; };
@@ -44,6 +53,15 @@
 
 /* Begin PBXFileReference section */
 		0D2A31651D37D25C0045EADF /* weibo_jingzhao-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "weibo_jingzhao-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		0D2A31691D37D7400045EADF /* LogOnModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogOnModel.swift; sourceTree = "<group>"; };
+		0D41058C1D3C9D4B005AD151 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0D41058E1D3C9DF8005AD151 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0D4105901D3C9E38005AD151 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0D4105931D3C9E9A005AD151 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0D4105951D3CA02F005AD151 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0D4105971D3CA037005AD151 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		0D4105991D3CA06E005AD151 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0D71FE4C1D3CBAAA00F1BD68 /* LogOnViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogOnViewModel.swift; sourceTree = "<group>"; };
 		0DEC84E01D2E49F6003826A2 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		0DEC84E21D2E49F9003826A2 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		0DEC84E61D2E4A20003826A2 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
@@ -84,6 +102,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D41059A1D3CA06E005AD151 /* libz.tbd in Frameworks */,
+				0D4105981D3CA037005AD151 /* ImageIO.framework in Frameworks */,
+				0D4105961D3CA02F005AD151 /* MapKit.framework in Frameworks */,
+				0D4105941D3C9E9A005AD151 /* CoreTelephony.framework in Frameworks */,
+				0D4105911D3C9E38005AD151 /* libsqlite3.tbd in Frameworks */,
+				0D41058F1D3C9DF8005AD151 /* SystemConfiguration.framework in Frameworks */,
+				0D41058D1D3C9D4B005AD151 /* Foundation.framework in Frameworks */,
 				0DEC84F31D2E4A20003826A2 /* libWeiboSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +135,7 @@
 		0D2A315F1D37C53A0045EADF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0D71FE4C1D3CBAAA00F1BD68 /* LogOnViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -117,6 +143,7 @@
 		0D2A31601D37C57B0045EADF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0D2A31691D37D7400045EADF /* LogOnModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -139,6 +166,13 @@
 		0DEC84E41D2E49FF003826A2 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				0D4105991D3CA06E005AD151 /* libz.tbd */,
+				0D4105951D3CA02F005AD151 /* MapKit.framework */,
+				0D4105971D3CA037005AD151 /* ImageIO.framework */,
+				0D4105931D3C9E9A005AD151 /* CoreTelephony.framework */,
+				0D4105901D3C9E38005AD151 /* libsqlite3.tbd */,
+				0D41058E1D3C9DF8005AD151 /* SystemConfiguration.framework */,
+				0D41058C1D3C9D4B005AD151 /* Foundation.framework */,
 				0DEC84E51D2E4A20003826A2 /* libWeiboSDK */,
 				0DEC84E21D2E49F9003826A2 /* Quick.framework */,
 				0DEC84E01D2E49F6003826A2 /* Nimble.framework */,
@@ -422,7 +456,9 @@
 				0DEC85541D2E97F3003826A2 /* MeViewController.swift in Sources */,
 				0DEC85521D2E97E7003826A2 /* FindViewController.swift in Sources */,
 				0DF0C5351D2DFA4000C63F78 /* TabBarViewController.swift in Sources */,
+				0D4105921D3C9E78005AD151 /* LogOnModel.swift in Sources */,
 				0DF0C5331D2DFA4000C63F78 /* AppDelegate.swift in Sources */,
+				0D71FE4D1D3CBAAA00F1BD68 /* LogOnViewModel.swift in Sources */,
 				0DEC85561D2E97FB003826A2 /* NewsViewController.swift in Sources */,
 				0DEC85501D2E97E0003826A2 /* AddViewController.swift in Sources */,
 				0DEC854E1D2E9776003826A2 /* HomeViewController.swift in Sources */,
@@ -520,6 +556,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -559,6 +596,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
