@@ -9,13 +9,14 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WeiboSDKDelegate {
 
     var window: UIWindow?
-
+    let appKey = "3528875611"
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        WeiboSDK.enableDebugMode(true)
+        WeiboSDK.registerApp(appKey)
         return true
     }
 
@@ -41,6 +42,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return WeiboSDK.handleOpenURL(url, delegate: self)
+    }
+    
+    /*
+     WeiboSDKDelegate
+     */
+    
+    func didReceiveWeiboRequest(request: WBBaseRequest!) {
+        if (request.isKindOfClass(WBProvideMessageForWeiboRequest)) {
+            
+        }
+    }
+    
+    func didReceiveWeiboResponse(response: WBBaseResponse!) {
+        if response.isKindOfClass(WBAuthorizeResponse) {
+            let userInfo = ["responseResult": response]
+            NSNotificationCenter.defaultCenter().postNotificationName(LogOnModel().notificationAuthorize, object: self, userInfo: userInfo);
+        }
+    }
 }
 
