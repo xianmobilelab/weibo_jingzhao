@@ -118,7 +118,7 @@
         <!--Home View Controller-->
         <scene sceneID="waK-XW-5Vh">
             <objects>
-                <viewController id="wt5-9A-BeV" customClass="HomeViewController" customModule="weibo_jingzhao" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="wt5-9A-BeV" customClass="HomeViewController" customModule="weibo_jingzhao" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IOE-jP-iif"/>
                         <viewControllerLayoutGuide type="bottom" id="aPW-I8-H55"/>
@@ -126,9 +126,34 @@
                     <view key="view" contentMode="scaleToFill" id="YKX-TO-LEm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sjf-Aw-5rs">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="identifierStatusTextCell" id="SFJ-v1-QKm" customClass="StatusTextCell" customModule="weibo_jingzhao" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SFJ-v1-QKm" id="XgD-Zj-4vd">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.4674936482" green="0.99390319279999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Sjf-Aw-5rs" secondAttribute="trailing" id="3tA-mo-p7X"/>
+                            <constraint firstItem="aPW-I8-H55" firstAttribute="top" secondItem="Sjf-Aw-5rs" secondAttribute="bottom" id="CR0-xZ-sux"/>
+                            <constraint firstItem="Sjf-Aw-5rs" firstAttribute="leading" secondItem="YKX-TO-LEm" secondAttribute="leading" id="bbT-ow-7cE"/>
+                            <constraint firstItem="Sjf-Aw-5rs" firstAttribute="top" secondItem="IOE-jP-iif" secondAttribute="bottom" id="jdu-w7-5re"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="82v-NQ-1E5"/>
+                    <connections>
+                        <outlet property="tableView" destination="Sjf-Aw-5rs" id="2L7-jf-Ibe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8rq-wx-GOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
