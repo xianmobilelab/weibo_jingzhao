@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0A88751D3DB18F002A6906 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0A88741D3DB18F002A6906 /* SwiftyJSON.framework */; };
 		0D41058D1D3C9D4B005AD151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D41058C1D3C9D4B005AD151 /* Foundation.framework */; };
 		0D41058F1D3C9DF8005AD151 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D41058E1D3C9DF8005AD151 /* SystemConfiguration.framework */; };
 		0D4105911D3C9E38005AD151 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4105901D3C9E38005AD151 /* libsqlite3.tbd */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D0A88741D3DB18F002A6906 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		0D2A31651D37D25C0045EADF /* weibo_jingzhao-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "weibo_jingzhao-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		0D2A31691D37D7400045EADF /* Logon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logon.swift; sourceTree = "<group>"; };
 		0D41058C1D3C9D4B005AD151 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0A88751D3DB18F002A6906 /* SwiftyJSON.framework in Frameworks */,
 				0D41059A1D3CA06E005AD151 /* libz.tbd in Frameworks */,
 				0D4105981D3CA037005AD151 /* ImageIO.framework in Frameworks */,
 				0D4105961D3CA02F005AD151 /* MapKit.framework in Frameworks */,
@@ -163,6 +166,7 @@
 		0DEC84E41D2E49FF003826A2 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				0D0A88741D3DB18F002A6906 /* SwiftyJSON.framework */,
 				0D4105991D3CA06E005AD151 /* libz.tbd */,
 				0D4105951D3CA02F005AD151 /* MapKit.framework */,
 				0D4105971D3CA037005AD151 /* ImageIO.framework */,
@@ -436,6 +440,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);
 			outputPaths = (
 			);
