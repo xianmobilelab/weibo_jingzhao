@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UserFooterInfoCell" customModule="weibo_jingzhao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usg-2M-1ll">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="35"/>
+                    <state key="normal" title="转发"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRS-gd-pSg">
+                    <rect key="frame" x="200" y="0.0" width="100" height="35"/>
+                    <state key="normal" title="赞"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vf1-NL-sMb">
+                    <rect key="frame" x="100" y="0.0" width="100" height="35"/>
+                    <state key="normal" title="评论"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qRS-gd-pSg" firstAttribute="leading" secondItem="vf1-NL-sMb" secondAttribute="trailing" id="6Wl-fT-q9B"/>
+                <constraint firstItem="Usg-2M-1ll" firstAttribute="width" secondItem="vf1-NL-sMb" secondAttribute="width" id="6ea-Bq-5Cj"/>
+                <constraint firstItem="vf1-NL-sMb" firstAttribute="leading" secondItem="Usg-2M-1ll" secondAttribute="trailing" id="7gq-hY-Lmf"/>
+                <constraint firstItem="qRS-gd-pSg" firstAttribute="width" secondItem="vf1-NL-sMb" secondAttribute="width" id="KaB-F2-rzH"/>
+                <constraint firstItem="Usg-2M-1ll" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Wjb-k2-UkV"/>
+                <constraint firstItem="vf1-NL-sMb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YeB-fZ-DSf"/>
+                <constraint firstItem="Usg-2M-1ll" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ytd-ey-pgn"/>
+                <constraint firstAttribute="trailing" secondItem="qRS-gd-pSg" secondAttribute="trailing" id="ZMy-hx-lHI"/>
+                <constraint firstAttribute="bottom" secondItem="vf1-NL-sMb" secondAttribute="bottom" id="cKk-Kj-b9F"/>
+                <constraint firstItem="qRS-gd-pSg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hGU-0f-7FK"/>
+                <constraint firstAttribute="bottom" secondItem="qRS-gd-pSg" secondAttribute="bottom" id="rDH-Bq-Hgq"/>
+                <constraint firstAttribute="bottom" secondItem="Usg-2M-1ll" secondAttribute="bottom" id="y7c-jO-tfM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="288" y="176.5"/>
+        </view>
+    </objects>
+</document>

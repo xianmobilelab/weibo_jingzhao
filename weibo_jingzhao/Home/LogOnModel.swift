@@ -14,6 +14,7 @@ class LogOnModel : NSObject {
     let redirectURI = "https://api.weibo.com/oauth2/default.html"
     typealias CompletionBlock = (response: WBAuthorizeResponse?, logOn: Bool) -> Void
     
+    var authorResponseResult:WBAuthorizeResponse?
     private var authorizeCallBack: CompletionBlock = {_,_ in }
     
     override init() {
@@ -24,6 +25,33 @@ class LogOnModel : NSObject {
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
+    
+    /*
+     public function
+     */
+    
+    static func storeUserInformation(response:WBAuthorizeResponse)  {
+        NSUserDefaults.standardUserDefaults().setObject(response.userInfo, forKey: "userInformation")
+        NSUserDefaults.standardUserDefaults().synchronize()
+    }
+    
+    static func getStoreUserInformation() -> NSDictionary? {
+        guard let userInfo = NSUserDefaults.standardUserDefaults().objectForKey("userInformation") as? NSDictionary else{
+            return nil
+        }
+        return userInfo
+    }
+    
+    static func boolLogOn() -> Bool {
+        guard let _ = NSUserDefaults.standardUserDefaults().objectForKey("userInformation") as? NSDictionary else {
+            return false
+        }
+        return true
+    }
+    
+    /*
+     private function
+     */
     
     func ssoAuthorize( callback: CompletionBlock) {
         guard let requestAuthorize = WBAuthorizeRequest.request() as? WBAuthorizeRequest else {
@@ -42,6 +70,7 @@ class LogOnModel : NSObject {
             return
         }
         if  responseResult.statusCode.rawValue == 0 {
+            authorResponseResult = responseResult
             authorizeCallBack(response: responseResult, logOn: true)
         }
         else {
