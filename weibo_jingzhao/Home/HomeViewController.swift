@@ -14,12 +14,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var tableView: UITableView!
     private let timeLineRequest = UserTimeLineRequest()
     private var homeViewModel: HomeViewControllerViewModel?
+    private let refresh = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setTableView()
         addRightBarButton()
+        addRefreshView()
         getUserTimeLine()
     }
     
@@ -48,11 +50,20 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
+    func addRefreshView() {
+        refresh.addTarget(self, action: #selector(getUserTimeLine), forControlEvents: .ValueChanged)
+        refresh.attributedTitle = NSAttributedString(string: "松手刷新微博")
+        tableView .addSubview(refresh)
+    }
+    
     func getUserTimeLine() {
         timeLineRequest.requestTimeLineData("1", countNum: "5") { [weak self](result) in
             let timeLines = TimeLineTransform().timeLineTransformFromDictionary(result)
-            self?.homeViewModel = HomeViewControllerViewModel(timeLines: timeLines)
-            self?.tableView.reloadData()
+            if  let controller = self {
+                controller.homeViewModel = HomeViewControllerViewModel(timeLines: timeLines)
+                controller.tableView.reloadData()
+                controller.refresh.endRefreshing()
+            }
         }
     }
     
