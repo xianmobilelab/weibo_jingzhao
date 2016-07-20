@@ -70,8 +70,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-        let cell = tableView.dequeueReusableCellWithIdentifier(StatusTextCell.identifierCell, forIndexPath: indexPath)
-        guard let statusTextCell = cell as? StatusTextCell else {
+        let cell = tableView.dequeueReusableCellWithIdentifier(HomeViewControllerViewModel.getCellTypeIdentify(timeLineModel.statusesModel[indexPath.row]), forIndexPath: indexPath)
+        guard let statusTextCell = cell as? StatusCell else {
             return cell
         }
         statusTextCell.configureData(timeLineModel.statusesModel[indexPath.row])
