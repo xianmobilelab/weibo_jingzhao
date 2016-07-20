@@ -8,7 +8,7 @@
 
 import Foundation
 
-class StatusTextCell: UITableViewCell {
+class StatusTextCell: StatusCell {
     static let identifierCell = "identifierStatusTextCell"
     
     var userHeaderView: UserHeaderInfoCell?
@@ -24,7 +24,7 @@ class StatusTextCell: UITableViewCell {
         addViews()
     }
     
-    func configureData(statusModel: StatusModel) {
+    override func configureData(statusModel: StatusModel) {
         textContent.text = statusModel.text
         userHeaderView?.configureData(statusModel.userModel)
     }
