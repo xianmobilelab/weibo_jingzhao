@@ -14,7 +14,6 @@
 		0D38FECB1D3E0DA100A5AEA8 /* UserHeaderInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FECA1D3E0DA100A5AEA8 /* UserHeaderInfoCell.swift */; };
 		0D38FECD1D3E0E6400A5AEA8 /* UserHeaderInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D38FECC1D3E0E6400A5AEA8 /* UserHeaderInfoCell.xib */; };
 		0D38FED01D3E13F300A5AEA8 /* StatusTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FECF1D3E13F300A5AEA8 /* StatusTextCell.swift */; };
-		0D38FED21D3E144500A5AEA8 /* StatusTextPicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FED11D3E144500A5AEA8 /* StatusTextPicCell.swift */; };
 		0D38FEEC1D3E290900A5AEA8 /* HomeViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FEEB1D3E290900A5AEA8 /* HomeViewControllerViewModel.swift */; };
 		0D38FEFA1D3F0FA800A5AEA8 /* StatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FEF91D3F0FA800A5AEA8 /* StatusCell.swift */; };
 		0D38FEFC1D3F130700A5AEA8 /* UserFooterInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FEFB1D3F130700A5AEA8 /* UserFooterInfoCell.swift */; };
@@ -22,6 +21,10 @@
 		0D38FF001D3F165100A5AEA8 /* PicViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FEFF1D3F165100A5AEA8 /* PicViewCell.swift */; };
 		0D38FF811D3F412600A5AEA8 /* StatusTextPicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FED11D3E144500A5AEA8 /* StatusTextPicCell.swift */; };
 		0D38FF871D3F55E400A5AEA8 /* View+autoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FF861D3F55E400A5AEA8 /* View+autoLayout.swift */; };
+		0D38FF951D3FACE600A5AEA8 /* HomeViewControllerViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FF941D3FACE600A5AEA8 /* HomeViewControllerViewModelSpec.swift */; };
+		0D38FF971D3FAECA00A5AEA8 /* HomeViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FEEB1D3E290900A5AEA8 /* HomeViewControllerViewModel.swift */; };
+		0D38FF9A1D3FAF5F00A5AEA8 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FEAD1D3DF28100A5AEA8 /* StatusModel.swift */; };
+		0D38FF9B1D3FB32E00A5AEA8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FEBB1D3DF44700A5AEA8 /* UserModel.swift */; };
 		0D41058D1D3C9D4B005AD151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D41058C1D3C9D4B005AD151 /* Foundation.framework */; };
 		0D41058F1D3C9DF8005AD151 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D41058E1D3C9DF8005AD151 /* SystemConfiguration.framework */; };
 		0D4105911D3C9E38005AD151 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4105901D3C9E38005AD151 /* libsqlite3.tbd */; };
@@ -83,6 +86,7 @@
 		0D38FEFD1D3F135300A5AEA8 /* UserFooterInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserFooterInfoCell.xib; sourceTree = "<group>"; };
 		0D38FEFF1D3F165100A5AEA8 /* PicViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicViewCell.swift; sourceTree = "<group>"; };
 		0D38FF861D3F55E400A5AEA8 /* View+autoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+autoLayout.swift"; sourceTree = "<group>"; };
+		0D38FF941D3FACE600A5AEA8 /* HomeViewControllerViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewControllerViewModelSpec.swift; sourceTree = "<group>"; };
 		0D41058C1D3C9D4B005AD151 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0D41058E1D3C9DF8005AD151 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0D4105901D3C9E38005AD151 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -356,6 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				0DF0C5471D2DFA4000C63F78 /* weibo_jingzhaoTests.swift */,
+				0D38FF941D3FACE600A5AEA8 /* HomeViewControllerViewModelSpec.swift */,
 				0DF0C5491D2DFA4000C63F78 /* Info.plist */,
 			);
 			path = weibo_jingzhaoTests;
@@ -551,6 +556,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D38FF951D3FACE600A5AEA8 /* HomeViewControllerViewModelSpec.swift in Sources */,
+				0D38FF971D3FAECA00A5AEA8 /* HomeViewControllerViewModel.swift in Sources */,
+				0D38FF9A1D3FAF5F00A5AEA8 /* StatusModel.swift in Sources */,
+				0D38FF9B1D3FB32E00A5AEA8 /* UserModel.swift in Sources */,
 				0DF0C5481D2DFA4000C63F78 /* weibo_jingzhaoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

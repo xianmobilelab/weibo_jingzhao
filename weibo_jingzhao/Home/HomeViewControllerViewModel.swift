@@ -12,9 +12,9 @@ class HomeViewControllerViewModel {
     
     static func getCellTypeIdentify(statusModel:StatusModel) -> String {
         if statusModel.picUrls.count > 0 {
-            return StatusTextPicCell.identifierCell
+            return "identifierStatusTextPicCell"
         }else{
-            return StatusTextCell.identifierCell
+            return "identifierStatusTextCell"            
         }
     }
 }
