@@ -16,6 +16,8 @@
 		0D38FED01D3E13F300A5AEA8 /* StatusTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FECF1D3E13F300A5AEA8 /* StatusTextCell.swift */; };
 		0D38FED21D3E144500A5AEA8 /* StatusTextPicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FED11D3E144500A5AEA8 /* StatusTextPicCell.swift */; };
 		0D38FEEC1D3E290900A5AEA8 /* HomeViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FEEB1D3E290900A5AEA8 /* HomeViewControllerViewModel.swift */; };
+		0D38FEFC1D3F130700A5AEA8 /* UserFooterInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FEFB1D3F130700A5AEA8 /* UserFooterInfoCell.swift */; };
+		0D38FEFE1D3F135300A5AEA8 /* UserFooterInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D38FEFD1D3F135300A5AEA8 /* UserFooterInfoCell.xib */; };
 		0D41058D1D3C9D4B005AD151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D41058C1D3C9D4B005AD151 /* Foundation.framework */; };
 		0D41058F1D3C9DF8005AD151 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D41058E1D3C9DF8005AD151 /* SystemConfiguration.framework */; };
 		0D4105911D3C9E38005AD151 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4105901D3C9E38005AD151 /* libsqlite3.tbd */; };
@@ -72,6 +74,8 @@
 		0D38FECF1D3E13F300A5AEA8 /* StatusTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTextCell.swift; sourceTree = "<group>"; };
 		0D38FED11D3E144500A5AEA8 /* StatusTextPicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTextPicCell.swift; sourceTree = "<group>"; };
 		0D38FEEB1D3E290900A5AEA8 /* HomeViewControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewControllerViewModel.swift; sourceTree = "<group>"; };
+		0D38FEFB1D3F130700A5AEA8 /* UserFooterInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserFooterInfoCell.swift; sourceTree = "<group>"; };
+		0D38FEFD1D3F135300A5AEA8 /* UserFooterInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserFooterInfoCell.xib; sourceTree = "<group>"; };
 		0D41058C1D3C9D4B005AD151 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0D41058E1D3C9DF8005AD151 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0D4105901D3C9E38005AD151 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -174,6 +178,7 @@
 		0D2A31611D37C5900045EADF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0D38FF821D3F41E000A5AEA8 /* cellInsideView */,
 				0D38FECE1D3E138F00A5AEA8 /* cell */,
 				0D38FECA1D3E0DA100A5AEA8 /* UserHeaderInfoCell.swift */,
 				0D38FECC1D3E0E6400A5AEA8 /* UserHeaderInfoCell.xib */,
@@ -196,6 +201,15 @@
 				0D38FED11D3E144500A5AEA8 /* StatusTextPicCell.swift */,
 			);
 			name = cell;
+			sourceTree = "<group>";
+		};
+		0D38FF821D3F41E000A5AEA8 /* cellInsideView */ = {
+			isa = PBXGroup;
+			children = (
+				0D38FEFB1D3F130700A5AEA8 /* UserFooterInfoCell.swift */,
+				0D38FEFD1D3F135300A5AEA8 /* UserFooterInfoCell.xib */,
+			);
+			name = cellInsideView;
 			sourceTree = "<group>";
 		};
 		0DEC84E41D2E49FF003826A2 /* lib */ = {
@@ -448,6 +462,7 @@
 				0DF0C53A1D2DFA4000C63F78 /* Assets.xcassets in Resources */,
 				0DF0C5381D2DFA4000C63F78 /* Main.storyboard in Resources */,
 				0DEC84F41D2E4A20003826A2 /* WeiboSDK.bundle in Resources */,
+				0D38FEFE1D3F135300A5AEA8 /* UserFooterInfoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +514,7 @@
 				0D38FED01D3E13F300A5AEA8 /* StatusTextCell.swift in Sources */,
 				0DF0C5351D2DFA4000C63F78 /* TabBarViewController.swift in Sources */,
 				0D4105921D3C9E78005AD151 /* LogOnModel.swift in Sources */,
+				0D38FEFC1D3F130700A5AEA8 /* UserFooterInfoCell.swift in Sources */,
 				0DF0C5331D2DFA4000C63F78 /* AppDelegate.swift in Sources */,
 				0D38FEAE1D3DF28100A5AEA8 /* StatusModel.swift in Sources */,
 				0D71FE4D1D3CBAAA00F1BD68 /* LogOnViewModel.swift in Sources */,
