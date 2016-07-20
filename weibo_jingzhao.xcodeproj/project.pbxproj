@@ -16,8 +16,12 @@
 		0D38FED01D3E13F300A5AEA8 /* StatusTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FECF1D3E13F300A5AEA8 /* StatusTextCell.swift */; };
 		0D38FED21D3E144500A5AEA8 /* StatusTextPicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FED11D3E144500A5AEA8 /* StatusTextPicCell.swift */; };
 		0D38FEEC1D3E290900A5AEA8 /* HomeViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FEEB1D3E290900A5AEA8 /* HomeViewControllerViewModel.swift */; };
+		0D38FEFA1D3F0FA800A5AEA8 /* StatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FEF91D3F0FA800A5AEA8 /* StatusCell.swift */; };
 		0D38FEFC1D3F130700A5AEA8 /* UserFooterInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FEFB1D3F130700A5AEA8 /* UserFooterInfoCell.swift */; };
 		0D38FEFE1D3F135300A5AEA8 /* UserFooterInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D38FEFD1D3F135300A5AEA8 /* UserFooterInfoCell.xib */; };
+		0D38FF001D3F165100A5AEA8 /* PicViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FEFF1D3F165100A5AEA8 /* PicViewCell.swift */; };
+		0D38FF811D3F412600A5AEA8 /* StatusTextPicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FED11D3E144500A5AEA8 /* StatusTextPicCell.swift */; };
+		0D38FF871D3F55E400A5AEA8 /* View+autoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38FF861D3F55E400A5AEA8 /* View+autoLayout.swift */; };
 		0D41058D1D3C9D4B005AD151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D41058C1D3C9D4B005AD151 /* Foundation.framework */; };
 		0D41058F1D3C9DF8005AD151 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D41058E1D3C9DF8005AD151 /* SystemConfiguration.framework */; };
 		0D4105911D3C9E38005AD151 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4105901D3C9E38005AD151 /* libsqlite3.tbd */; };
@@ -74,8 +78,11 @@
 		0D38FECF1D3E13F300A5AEA8 /* StatusTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTextCell.swift; sourceTree = "<group>"; };
 		0D38FED11D3E144500A5AEA8 /* StatusTextPicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTextPicCell.swift; sourceTree = "<group>"; };
 		0D38FEEB1D3E290900A5AEA8 /* HomeViewControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewControllerViewModel.swift; sourceTree = "<group>"; };
+		0D38FEF91D3F0FA800A5AEA8 /* StatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCell.swift; sourceTree = "<group>"; };
 		0D38FEFB1D3F130700A5AEA8 /* UserFooterInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserFooterInfoCell.swift; sourceTree = "<group>"; };
 		0D38FEFD1D3F135300A5AEA8 /* UserFooterInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserFooterInfoCell.xib; sourceTree = "<group>"; };
+		0D38FEFF1D3F165100A5AEA8 /* PicViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicViewCell.swift; sourceTree = "<group>"; };
+		0D38FF861D3F55E400A5AEA8 /* View+autoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+autoLayout.swift"; sourceTree = "<group>"; };
 		0D41058C1D3C9D4B005AD151 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0D41058E1D3C9DF8005AD151 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0D4105901D3C9E38005AD151 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -180,8 +187,6 @@
 			children = (
 				0D38FF821D3F41E000A5AEA8 /* cellInsideView */,
 				0D38FECE1D3E138F00A5AEA8 /* cell */,
-				0D38FECA1D3E0DA100A5AEA8 /* UserHeaderInfoCell.swift */,
-				0D38FECC1D3E0E6400A5AEA8 /* UserHeaderInfoCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 			children = (
 				0D38FECF1D3E13F300A5AEA8 /* StatusTextCell.swift */,
 				0D38FED11D3E144500A5AEA8 /* StatusTextPicCell.swift */,
+				0D38FEF91D3F0FA800A5AEA8 /* StatusCell.swift */,
 			);
 			name = cell;
 			sourceTree = "<group>";
@@ -208,8 +214,19 @@
 			children = (
 				0D38FEFB1D3F130700A5AEA8 /* UserFooterInfoCell.swift */,
 				0D38FEFD1D3F135300A5AEA8 /* UserFooterInfoCell.xib */,
+				0D38FEFF1D3F165100A5AEA8 /* PicViewCell.swift */,
+				0D38FECA1D3E0DA100A5AEA8 /* UserHeaderInfoCell.swift */,
+				0D38FECC1D3E0E6400A5AEA8 /* UserHeaderInfoCell.xib */,
 			);
 			name = cellInsideView;
+			sourceTree = "<group>";
+		};
+		0D38FF831D3F550100A5AEA8 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				0D38FF861D3F55E400A5AEA8 /* View+autoLayout.swift */,
+			);
+			name = common;
 			sourceTree = "<group>";
 		};
 		0DEC84E41D2E49FF003826A2 /* lib */ = {
@@ -270,6 +287,7 @@
 		0DEC854A1D2E9758003826A2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0D38FF831D3F550100A5AEA8 /* common */,
 				0D2A31611D37C5900045EADF /* View */,
 				0D2A31601D37C57B0045EADF /* Model */,
 				0D2A315F1D37C53A0045EADF /* ViewModel */,
@@ -507,9 +525,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D38FEEC1D3E290900A5AEA8 /* HomeViewControllerViewModel.swift in Sources */,
+				0D38FF871D3F55E400A5AEA8 /* View+autoLayout.swift in Sources */,
+				0D38FF001D3F165100A5AEA8 /* PicViewCell.swift in Sources */,
 				0D0A88651D3D2F4D002A6906 /* UserTimeLineModel.swift in Sources */,
 				0DEC85541D2E97F3003826A2 /* MeViewController.swift in Sources */,
 				0D38FECB1D3E0DA100A5AEA8 /* UserHeaderInfoCell.swift in Sources */,
+				0D38FEFA1D3F0FA800A5AEA8 /* StatusCell.swift in Sources */,
+				0D38FF811D3F412600A5AEA8 /* StatusTextPicCell.swift in Sources */,
 				0DEC85521D2E97E7003826A2 /* FindViewController.swift in Sources */,
 				0D38FED01D3E13F300A5AEA8 /* StatusTextCell.swift in Sources */,
 				0DF0C5351D2DFA4000C63F78 /* TabBarViewController.swift in Sources */,
@@ -521,7 +543,6 @@
 				0DEC85561D2E97FB003826A2 /* NewsViewController.swift in Sources */,
 				0DEC85501D2E97E0003826A2 /* AddViewController.swift in Sources */,
 				0D38FEBC1D3DF44700A5AEA8 /* UserModel.swift in Sources */,
-				0D38FED21D3E144500A5AEA8 /* StatusTextPicCell.swift in Sources */,
 				0DEC854E1D2E9776003826A2 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
