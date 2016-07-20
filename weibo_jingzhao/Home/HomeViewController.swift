@@ -14,6 +14,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     private let logOnModel = LogOnModel()
     private let timeLineModel = UserTimeLineModel()
     let homeViewModel = HomeViewControllerViewModel()
+    let refresh = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +24,20 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let rightBarButton = UIBarButtonItem.init(title: "登陆", style: UIBarButtonItemStyle.Plain, target: self, action:#selector(HomeViewController.logOn))
         self.navigationItem.rightBarButtonItem = rightBarButton
         
+        addRefreshView()
         getUserTimeLine()
     }
     
     /*
      private
      */
+    
+    func addRefreshView() {
+        refresh.addTarget(self, action:#selector(getUserTimeLine), forControlEvents:UIControlEvents.ValueChanged)
+        refresh.attributedTitle = NSAttributedString.init(string: "松手刷新微博")
+        tableView .addSubview(refresh)
+    }
+    
     func logOn() {
         logOnModel.ssoAuthorize { (response, logOn) in
             if (logOn){
@@ -46,8 +55,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             let token = userInfo["access_token"] as? String else {
                 return
         }
-        timeLineModel.requestTimeLineData(token, pageNum: "1", countNum: "20") { (data) in
+        timeLineModel.requestTimeLineData(token, pageNum: "1", countNum: "5") { (data) in
             self.tableView.reloadData()
+            self.refresh.endRefreshing()
             print(data)
         }
     }
