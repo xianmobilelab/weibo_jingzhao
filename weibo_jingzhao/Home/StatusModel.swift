@@ -15,11 +15,13 @@ class StatusModel {
     let text:String
     let source:String
     let userModel:UserModel
+    var picUrls = [JSON]()
     
     init(jsonData: JSON) {
         creatAt = jsonData["s"].stringValue
         text = jsonData["text"].stringValue
         source = jsonData["source"].stringValue
         userModel = UserModel.init(userDataInfo: jsonData["user"].dictionaryValue)
+        picUrls = jsonData["pic_urls"].arrayValue
     }
 }
