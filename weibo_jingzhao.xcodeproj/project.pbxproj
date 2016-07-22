@@ -18,6 +18,7 @@
 		0D41059A1D3CA06E005AD151 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4105991D3CA06E005AD151 /* libz.tbd */; };
 		0D76B6CB1D4226DD00C04BA0 /* UserTimeLineRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D76B6CA1D4226DD00C04BA0 /* UserTimeLineRequest.swift */; };
 		0D76B7491D46D11800C04BA0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D76B7481D46D11800C04BA0 /* User.swift */; };
+		0D76B6D31D42A70A00C04BA0 /* TimeLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D76B6D21D42A70A00C04BA0 /* TimeLine.swift */; };
 		0DEC84F31D2E4A20003826A2 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEC84E61D2E4A20003826A2 /* libWeiboSDK.a */; };
 		0DEC84F41D2E4A20003826A2 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DEC84F01D2E4A20003826A2 /* WeiboSDK.bundle */; };
 		0DEC85451D2E8F64003826A2 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEC84E21D2E49F9003826A2 /* Quick.framework */; };
@@ -66,6 +67,7 @@
 		0D4105991D3CA06E005AD151 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		0D76B6CA1D4226DD00C04BA0 /* UserTimeLineRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTimeLineRequest.swift; sourceTree = "<group>"; };
 		0D76B7481D46D11800C04BA0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0D76B6D21D42A70A00C04BA0 /* TimeLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLine.swift; sourceTree = "<group>"; };
 		0DEC84E01D2E49F6003826A2 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		0DEC84E21D2E49F9003826A2 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		0DEC84E61D2E4A20003826A2 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				0D76B7481D46D11800C04BA0 /* User.swift */,
 				0D2A31691D37D7400045EADF /* Logon.swift */,
 				0D76B6CA1D4226DD00C04BA0 /* UserTimeLineRequest.swift */,
+				0D76B6D21D42A70A00C04BA0 /* TimeLine.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				0DEC85521D2E97E7003826A2 /* FindViewController.swift in Sources */,
 				0DF0C5351D2DFA4000C63F78 /* TabBarViewController.swift in Sources */,
 				0D4105921D3C9E78005AD151 /* Logon.swift in Sources */,
+				0D76B6D31D42A70A00C04BA0 /* TimeLine.swift in Sources */,
 				0DF0C5331D2DFA4000C63F78 /* AppDelegate.swift in Sources */,
 				0D76B6CB1D4226DD00C04BA0 /* UserTimeLineRequest.swift in Sources */,
 				0DEC85561D2E97FB003826A2 /* NewsViewController.swift in Sources */,
