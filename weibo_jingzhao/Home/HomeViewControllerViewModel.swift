@@ -24,4 +24,17 @@ class HomeViewControllerViewModel {
         return timeLines.map { StatusTextCellViewModel(model: $0) }
     }
     
+    func typeTextCellViewModel(indexPath: NSIndexPath) -> StatusTextCellViewModel {
+        return StatusTextCellViewModel(model: timeLines[indexPath.row])
+    }
+    
+    func typePicCellViewModels(indexPath: NSIndexPath) -> StatusTextPicCellViewModel {
+        return StatusTextPicCellViewModel(model: timeLines[indexPath.row])
+    }
+    
+    func getCellTypeIdentify(indexPath: NSIndexPath) -> String {
+        let timeLine = timeLines[indexPath.row]
+        return timeLine.picUrls.isEmpty ? StatusTextCell.identifierCell : StatusTextPicCell.identifierCell
+    }
+    
 }

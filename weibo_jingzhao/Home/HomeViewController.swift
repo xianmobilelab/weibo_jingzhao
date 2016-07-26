@@ -76,11 +76,19 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(StatusTextCell.identifierCell, forIndexPath: indexPath)
-        guard let statusTextCell = cell as? StatusTextCell, let homeViewModel = homeViewModel else {
-            return cell
+        guard let homeViewModel = homeViewModel else {
+            return UITableViewCell()
         }
-        statusTextCell.configureData( homeViewModel.textCellViewModels[indexPath.row])
-        return statusTextCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(homeViewModel.getCellTypeIdentify(indexPath), forIndexPath: indexPath)
+        if let statusTextCell = cell as? StatusTextCell {
+            statusTextCell.configureData(homeViewModel.typeTextCellViewModel(indexPath))
+            return statusTextCell
+        }
+        if let statusPicCell = cell as? StatusTextPicCell {
+            statusPicCell.configureData(homeViewModel.typePicCellViewModels(indexPath))
+            return statusPicCell
+        }
+        return cell
     }
+
 }
