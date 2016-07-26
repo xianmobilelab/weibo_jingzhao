@@ -16,6 +16,7 @@
 		0D4105961D3CA02F005AD151 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4105951D3CA02F005AD151 /* MapKit.framework */; };
 		0D4105981D3CA037005AD151 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4105971D3CA037005AD151 /* ImageIO.framework */; };
 		0D41059A1D3CA06E005AD151 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4105991D3CA06E005AD151 /* libz.tbd */; };
+		0D76B7491D46D11800C04BA0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D76B7481D46D11800C04BA0 /* User.swift */; };
 		0DEC84F31D2E4A20003826A2 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEC84E61D2E4A20003826A2 /* libWeiboSDK.a */; };
 		0DEC84F41D2E4A20003826A2 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DEC84F01D2E4A20003826A2 /* WeiboSDK.bundle */; };
 		0DEC85451D2E8F64003826A2 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEC84E21D2E49F9003826A2 /* Quick.framework */; };
@@ -62,6 +63,7 @@
 		0D4105951D3CA02F005AD151 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0D4105971D3CA037005AD151 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		0D4105991D3CA06E005AD151 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0D76B7481D46D11800C04BA0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0DEC84E01D2E49F6003826A2 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		0DEC84E21D2E49F9003826A2 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		0DEC84E61D2E4A20003826A2 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		0D2A31601D37C57B0045EADF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0D76B7481D46D11800C04BA0 /* User.swift */,
 				0D2A31691D37D7400045EADF /* Logon.swift */,
 			);
 			name = Model;
@@ -462,6 +465,7 @@
 				0DF0C5331D2DFA4000C63F78 /* AppDelegate.swift in Sources */,
 				0DEC85561D2E97FB003826A2 /* NewsViewController.swift in Sources */,
 				0DEC85501D2E97E0003826A2 /* AddViewController.swift in Sources */,
+				0D76B7491D46D11800C04BA0 /* User.swift in Sources */,
 				0DEC854E1D2E9776003826A2 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

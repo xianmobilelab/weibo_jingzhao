@@ -15,6 +15,7 @@ class Logon: NSObject {
     typealias CompletionBlock = (response: WBAuthorizeResponse?, logon: Bool) -> Void
     
     private var authorizeCallBack: CompletionBlock = { _,_ in }
+    var authorResponseResult: WBAuthorizeResponse?
     
     override init() {
         super.init()
@@ -23,6 +24,14 @@ class Logon: NSObject {
     
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    // MARK: Public
+    func boolLogon() -> Bool {
+        guard let _ = NSUserDefaults.standardUserDefaults().objectForKey("userInformation") as? Dictionary<String, AnyObject> else {
+            return false
+        }
+        return true
     }
     
     func ssoAuthorize( callback: CompletionBlock) {
@@ -36,6 +45,7 @@ class Logon: NSObject {
         WeiboSDK.sendRequest(requestAuthorize)
     }
     
+    // MARK: authoredDelegate
     func authoredDelegate(notification: NSNotification) {
         guard let responseResult = notification.userInfo? ["responseResult"] as? WBAuthorizeResponse else {
             authorizeCallBack(response: nil, logon: false)
@@ -43,6 +53,7 @@ class Logon: NSObject {
         }
         if  responseResult.statusCode.rawValue == 0 {
             authorizeCallBack(response: responseResult, logon: true)
+            authorResponseResult = responseResult
         }
         else {
             authorizeCallBack(response: responseResult, logon: false)
