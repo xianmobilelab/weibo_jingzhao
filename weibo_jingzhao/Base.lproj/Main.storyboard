@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar View Controller-->
@@ -205,6 +206,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e61-Qs-JXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="544" y="3118"/>
+        </scene>
+        <!--UserHeaderView-->
+        <scene sceneID="M0b-Y2-jc1">
+            <objects>
+                <viewController storyboardIdentifier="UserHeaderViewContainer" id="LLf-jR-r6o" userLabel="UserHeaderView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YPS-b2-hyL"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vd1-aV-UOS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cfd-a8-JR1" customClass="UserHeaderView" customModule="weibo_jingzhao" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zGb-xS-9ki">
+                                <rect key="frame" x="10" y="5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="63C-Ec-eXq"/>
+                                    <constraint firstAttribute="height" constant="50" id="dkD-2d-7Xd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PB9-8D-fpA">
+                                <rect key="frame" x="68" y="10" width="36" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="来自于" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zk6-rO-k3z">
+                                <rect key="frame" x="68" y="30" width="39" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="评论人数为：" textAlignment="right" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehg-Xz-rp3">
+                                <rect key="frame" x="514" y="23" width="66" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PB9-8D-fpA" firstAttribute="leading" secondItem="zGb-xS-9ki" secondAttribute="trailing" constant="8" id="6MH-a6-l83"/>
+                            <constraint firstItem="zk6-rO-k3z" firstAttribute="top" secondItem="PB9-8D-fpA" secondAttribute="bottom" constant="3" id="9yn-bJ-FU6"/>
+                            <constraint firstAttribute="trailing" secondItem="ehg-Xz-rp3" secondAttribute="trailing" constant="20" id="Bgl-tq-gM6"/>
+                            <constraint firstItem="PB9-8D-fpA" firstAttribute="top" secondItem="Cfd-a8-JR1" secondAttribute="topMargin" constant="10" id="S7U-dg-NvS"/>
+                            <constraint firstItem="ehg-Xz-rp3" firstAttribute="centerY" secondItem="Cfd-a8-JR1" secondAttribute="centerY" id="ZwE-bw-0ti"/>
+                            <constraint firstItem="zGb-xS-9ki" firstAttribute="leading" secondItem="Cfd-a8-JR1" secondAttribute="leading" constant="10" id="h7S-fF-pem"/>
+                            <constraint firstItem="zk6-rO-k3z" firstAttribute="leading" secondItem="PB9-8D-fpA" secondAttribute="leading" id="oAS-xE-ghW"/>
+                            <constraint firstItem="zGb-xS-9ki" firstAttribute="top" secondItem="Cfd-a8-JR1" secondAttribute="top" constant="5" id="wic-Pb-hCl"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="comment" destination="ehg-Xz-rp3" id="xJy-wb-Vhn"/>
+                            <outlet property="information" destination="zk6-rO-k3z" id="QQN-Oj-fY8"/>
+                            <outlet property="profile" destination="zGb-xS-9ki" id="G63-n6-SEW"/>
+                            <outlet property="title" destination="PB9-8D-fpA" id="XGs-Uw-vZO"/>
+                        </connections>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="60"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tBw-gF-bxC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="454" y="-855"/>
         </scene>
     </scenes>
 </document>
