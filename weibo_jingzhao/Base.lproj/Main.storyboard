@@ -220,10 +220,10 @@
             </objects>
             <point key="canvasLocation" x="-520" y="3170"/>
         </scene>
-        <!--View Controller-->
+        <!--Me View Controller-->
         <scene sceneID="kZh-n7-Tuy">
             <objects>
-                <viewController id="8EW-NX-TpO" sceneMemberID="viewController">
+                <viewController id="8EW-NX-TpO" customClass="MeViewController" customModule="weibo_jingzhao" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QiT-cV-8zy"/>
                         <viewControllerLayoutGuide type="bottom" id="Vcs-M9-6n5"/>
