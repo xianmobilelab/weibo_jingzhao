@@ -39,6 +39,12 @@ class UserInfoView: UIView {
         setInfoNumLayout()
     }
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        profile.layer.cornerRadius = 40
+        profile.layer.masksToBounds = true
+    }
     
     private func addInfoNumView() {
         weibo = infoNumView()
