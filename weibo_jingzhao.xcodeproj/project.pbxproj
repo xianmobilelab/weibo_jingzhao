@@ -32,6 +32,8 @@
 		0D76B70B1D43B49F00C04BA0 /* UIView+autoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D76B70A1D43B49F00C04BA0 /* UIView+autoLayout.swift */; };
 		0DAF2FAF1D4889F200D91627 /* UserInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF2FAE1D4889F200D91627 /* UserInfoRequest.swift */; };
 		0DAF2FBF1D4895A000D91627 /* MeViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF2FBE1D4895A000D91627 /* MeViewControllerViewModel.swift */; };
+		0DAF2FCF1D489E7000D91627 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF2FCE1D489E7000D91627 /* UserInfoView.swift */; };
+		0DAF2FD11D48B57400D91627 /* UserInfoViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF2FD01D48B57400D91627 /* UserInfoViewViewModel.swift */; };
 		0DEC84F31D2E4A20003826A2 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEC84E61D2E4A20003826A2 /* libWeiboSDK.a */; };
 		0DEC84F41D2E4A20003826A2 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DEC84F01D2E4A20003826A2 /* WeiboSDK.bundle */; };
 		0DEC85451D2E8F64003826A2 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEC84E21D2E49F9003826A2 /* Quick.framework */; };
@@ -95,6 +97,8 @@
 		0D76B70A1D43B49F00C04BA0 /* UIView+autoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+autoLayout.swift"; sourceTree = "<group>"; };
 		0DAF2FAE1D4889F200D91627 /* UserInfoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoRequest.swift; sourceTree = "<group>"; };
 		0DAF2FBE1D4895A000D91627 /* MeViewControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewControllerViewModel.swift; sourceTree = "<group>"; };
+		0DAF2FCE1D489E7000D91627 /* UserInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		0DAF2FD01D48B57400D91627 /* UserInfoViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewViewModel.swift; sourceTree = "<group>"; };
 		0DEC84E01D2E49F6003826A2 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		0DEC84E21D2E49F9003826A2 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		0DEC84E61D2E4A20003826A2 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
@@ -238,8 +242,17 @@
 			isa = PBXGroup;
 			children = (
 				0DAF2FBE1D4895A000D91627 /* MeViewControllerViewModel.swift */,
+				0DAF2FD01D48B57400D91627 /* UserInfoViewViewModel.swift */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		0DAF2FCC1D489E4900D91627 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0DAF2FCE1D489E7000D91627 /* UserInfoView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		0DEC84E41D2E49FF003826A2 /* lib */ = {
@@ -312,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				0DEC85531D2E97F3003826A2 /* MeViewController.swift */,
+				0DAF2FCC1D489E4900D91627 /* View */,
 				0DAF2FBD1D48957D00D91627 /* ViewModel */,
 				0DAF2FBC1D48956C00D91627 /* Model */,
 			);
@@ -551,6 +565,8 @@
 				0D38FEFC1D3F130700A5AEA8 /* UserFooterView.swift in Sources */,
 				0DF0C5331D2DFA4000C63F78 /* AppDelegate.swift in Sources */,
 				0D76B6CB1D4226DD00C04BA0 /* UserTimeLineRequest.swift in Sources */,
+				0DAF2FD11D48B57400D91627 /* UserInfoViewViewModel.swift in Sources */,
+				0DAF2FCF1D489E7000D91627 /* UserInfoView.swift in Sources */,
 				0DEC85561D2E97FB003826A2 /* NewsViewController.swift in Sources */,
 				0DAF2FBF1D4895A000D91627 /* MeViewControllerViewModel.swift in Sources */,
 				0DEC85501D2E97E0003826A2 /* AddViewController.swift in Sources */,

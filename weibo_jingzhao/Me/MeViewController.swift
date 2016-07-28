@@ -12,11 +12,19 @@ class MeViewController: UIViewController {
     
     private var viewModel: MeViewControllerViewModel?
     private let userInfo = UserInfoRequest()
+    private var infoView: UserInfoView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         requestUserInfo()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "userInfo" {
+            let view = segue.destinationViewController.view as? UserInfoView
+            infoView = view
+        }
     }
     
     func requestUserInfo() {
@@ -27,6 +35,9 @@ class MeViewController: UIViewController {
             }
             let model = UserInfoTransform().transformUserInfo(weiboUser)
             controller.viewModel = MeViewControllerViewModel(userInfo: model)
+            if let infoView = controller.infoView, let viewModel = controller.viewModel {
+                infoView.configureData(viewModel.infoViewModel)  
+            }
         }
     }
     

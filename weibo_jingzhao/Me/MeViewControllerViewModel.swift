@@ -16,4 +16,8 @@ class MeViewControllerViewModel {
         self.userInfo = userInfo
     }
     
+    var infoViewModel: UserInfoViewViewModel {
+        return UserInfoViewViewModel(userInfo: userInfo)
+    }
+
 }
