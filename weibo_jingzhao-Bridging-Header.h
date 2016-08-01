@@ -3,3 +3,5 @@
 //
 
 #import "WeiboSDK.h"
+#import "WBHttpRequest+WeiboUser.h"
+#import "WeiboUser.h"
